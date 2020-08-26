@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.header {
+  height: 69px;
+  position: fixed;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+ 
+.header img {
+    height: 50px;
+    padding-left: 10px;
+}
+
+a {
+    color: seashell;
+}
+
+nav {
+    text-align: right;
+    flex-grow: 1;
+}
+
+nav span {
+    display: inline-block;
+    padding: 20px 10px;
+    text-decoration: underline;
+    }
+    
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#poster {
+    background-image: url(mission.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    padding-top: 70px;
+    width: 95%;
+    margin-left: 50px;
+}
+
+.content {
+    background-color: black; 
+    width: 100%;
+    margin: auto;
+}
+
+.gallery {
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 250px;
+}
+
+.gallery img {
+    height: 200px;
+    width: 300px;
+   }
+
+.col {
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 0px;
+}
+
+.col h4 {
+    margin-top: 10px;
+}
+
+#locations {
+    background-image: url(locations.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 90%;
+    margin-left: 100px;;
+}
+
+#locations h2{
+  padding-top: 70px;
+}
+
+.address {
+    display: flex;  
+    justify-content: center;
+}
+
+.downtown {
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    opacity: 1;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.bayside {
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    opacity: 1;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.oakdale {
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    opacity: 1;
+    margin-left: 20px;
+    margin-top: 15px;   
+}
+
+p {
+    line-height: 3em;
+}
+
+.contact {
+    height: 200px;
+}
+
+.footer h5 {
+  text-align: left;
+  margin-left: 20px;  
+}
