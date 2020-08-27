@@ -72,7 +72,7 @@ nav span {
 .gallery img {
     height: 200px;
     width: 300px;
-   }
+}
 
 .col {
   margin-right: 15px;
@@ -143,17 +143,29 @@ p {
   margin-left: 20px;  
 }
 
-@media only screen and (max-width:480px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
     .flex-container {
-      width: auto;
+      width: 95%;
      } 
     #poster {
-       width: auto;
+       width: 95%;
      } 
    }
 
-   @media only screen and (min-width: 320px) and (max-width: 480px), (orientation:portrait) {
+   @media only screen and (min-width: 320px) and (max-width: 480px) {
     .gallery .col {
+     margin-left: 100px;
+    }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    #locations {
       width: 95%;
+    }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .contact {
+      text-align: center;
     }
   }
