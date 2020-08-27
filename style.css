@@ -142,3 +142,18 @@ p {
   text-align: left;
   margin-left: 20px;  
 }
+
+@media only screen and (max-width:480px) {
+    .flex-container {
+      width: auto;
+     } 
+    #poster {
+       width: auto;
+     } 
+   }
+
+   @media only screen and (min-width: 320px) and (max-width: 480px), (orientation:portrait) {
+    .gallery-item .col {
+      width: 95%;
+    }
+  }
