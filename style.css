@@ -1,171 +1,169 @@
-body {
-    margin: 0;
-    font-family: Helvetica, sans-serif;
-    font-size: 22px;
-    color: seashell;
-    background-color: black;
-    opacity: 0.9;
-    text-align: center;
-}
+/* Universal Styles */
 
-.header {
-  height: 69px;
-  position: fixed;
+body {
+  margin: 0;
+  font-family: "Helvetica", sans-serif;
+  font-size: 22px;
+  color: seashell;
   background-color: black;
-  border-bottom: 1px solid seashell;
-  z-index: 1;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
- 
-.header img {
-    height: 50px;
-    padding-left: 10px;
+  text-align: center;
 }
 
 a {
-    color: seashell;
+  color: seashell;
+}
+
+h2,
+h3,
+h4 {
+margin: 0;
+padding: 10px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Header Section */
+
+header {
+width: 100%;
+position: fixed;
+z-index: 1;
+height: 69px;
+background-color: black;
+border-bottom: 1px solid seashell;
+align-items: center;
+}
+
+header img {
+height: 50px;
+padding-left: 10px;
 }
 
 nav {
-    text-align: right;
-    flex-grow: 1;
+text-align: right;
+flex-grow: 1;
 }
 
 nav span {
-    display: inline-block;
-    padding: 20px 10px;
-    text-decoration: underline;
-    }
-    
-.flex-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+display: inline-block;
+padding: 20px 10px;
 }
 
-#poster {
-    background-image: url(mission.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 700px;
-    padding-top: 70px;
-    width: 95%;
-    margin-left: 50px;
+/* Main Section */
+
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  height: 69px;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  align-items: center;
 }
 
-.content {
-    background-color: black; 
-    width: 100%;
-    margin: auto;
+header img {
+  height: 50px;
+  padding-left: 10px;
 }
 
-.gallery {
-    display: flex;
-    width: 1000px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-left: 250px;
+nav {
+  text-align: right;
+  flex-grow: 1;
 }
 
-.gallery img {
-    height: 200px;
-    width: 300px;
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
 }
 
-.col {
-  margin-right: 15px;
-  margin-left: 15px;
-  margin-bottom: 0px;
+/* Main Section */
+
+.main {
+  padding-top: 69px;
+  opacity: 0.9;
+  width: 1200px;
+  margin: auto;
 }
 
-.col h4 {
-    margin-top: 10px;
-}
-
-#locations {
-    background-image: url(locations.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 500px;
-    width: 90%;
-    margin-left: 100px;;
-}
-
-#locations h2{
+#mission {
+  height: 700px;
+  background-image: url(mission.jpg);    
   padding-top: 70px;
 }
 
-.address {
-    display: flex;  
-    justify-content: center;
+#mission .content {
+   margin: auto;
+   background-color: black; 
+  width: 100%;
 }
 
-.downtown {
-    background-color: black;
-    height: 300px;
-    width: 300px;
-    opacity: 1;
-    margin-right: 20px;
-    margin-top: 15px;
+/* Store Section */
+
+#store {
+  height: 700px;
+  width: 1000px;
+  margin: auto;
+  padding-top: 70px;
 }
 
-.bayside {
-    background-color: black;
-    height: 300px;
-    width: 300px;
-    opacity: 1;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 15px;
+.col {
+  padding: 5px;
 }
 
-.oakdale {
-    background-color: black;
-    height: 300px;
-    width: 300px;
-    opacity: 1;
-    margin-left: 20px;
-    margin-top: 15px;   
+.col img {
+  height: 200px;
+  margin: 10px;
+  display: block;
 }
 
-p {
-    line-height: 3em;
+.col span {
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;  
 }
 
-.contact {
-    height: 200px;
+/* Location Section */
+
+.flex-container.locations {
+  padding-top: 5px;
 }
 
-.footer h5 {
-  text-align: left;
-  margin-left: 20px;  
+#locations {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  height: 500px;
+  padding-top: 70px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-    .flex-container {
-      width: 95%;
-     } 
-    #poster {
-       width: 95%;
-     } 
-   }
+#locations .flex-container {
+  margin: auto;
+  width: 1100px;
+}
 
-   @media only screen and (min-width: 320px) and (max-width: 480px) {
-    .gallery .col {
-     margin-left: 100px;
-    }
-  }
+.location {
+  opacity: 1.0;
+  padding: 10px;
+  margin: 5px 20px;
+  background-color: black;
+  flex-basis: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
-    #locations {
-      width: 95%;
-    }
-  }
+/* Contact Section */
 
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
-    .contact {
-      text-align: center;
-    }
-  }
+#contact {
+  height: 200px;
+}
+
+footer {
+text-align: left;
+margin-left: 20px;  
+}
+
